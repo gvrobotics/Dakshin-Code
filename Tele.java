@@ -102,9 +102,13 @@ public class Tele extends OpMode
         if (gamepad1.b) {
             Shoot.setPower(0.4);
         }
+        if (gamepad1.dpad_right){
+            Shoot.setPower(0.0);
+        }
         if (gamepad1.dpad_left) {
             Intake.setPower(0.5);
 
         }
     }
 }
+
